@@ -1,0 +1,174 @@
+@font-face {
+  font-family: paranoia-reg;
+  src: url(/calabrese_ceramics_0323/fonts/Paranoia-Regular.ttf);
+}
+@font-face {
+  font-family: paranoia-b;
+  src: url(/calabrese_ceramics_0323/fonts/paranoida-g.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary: #000;
+  --secondary: rgb(113, 179, 48);
+  --secondary-mute: rgba(113, 179, 48, 0.65);
+  --rosy: rgb(224, 183, 183);
+  --mute: rgb(132, 132, 132);
+  --blury: rgba(229, 239, 228, 0.124);
+  --blury-2: rgba(238, 242, 238, 0.948);
+  --font-1: paranoia-b;
+  --font-2: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--blury);
+}
+
+.bg-img {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  background-image: url(/calabrese_ceramics_0323/assets/images/images/hearts/heart_hero_transparent.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow( 2px 2px 20px var(--rosy));
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  padding: 1rem 1rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-1);
+  font-size: 3.6rem;
+  color: var(--secondary);
+}
+
+h1 span a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+h1 span a:hover {
+  text-shadow: 0 0 50px var(--secondary-mute);
+}
+
+main {
+  border: 2px solid red;
+  width: 100%;
+  height: 90%;
+}
+.collection-con {
+  border: 2px solid red;
+  width: 100%;
+  height: 70%;
+}
+.text-con {
+  border: 2px solid red;
+  font-family: var(--font-4);
+  font-size: 1.2rem;
+}
+.text-con h2 {
+  font-family: var(--font-1);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.text-con p {
+  font-family: var(--font-4);
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-s {
+  font-family: var(--font-2);
+  background-color: var(--blury);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 1.5rem;
+}
+
+.footer-s .menu-s {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.footer-s .menu-s li a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.menu-btn {
+  width: 30%;
+  list-style: none;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 6px;
+  padding: 0.2rem 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.menu-btn:hover {
+  border: none;
+  color: var(--secondary);
+  text-shadow: 5px 5px 10px var(--secondary-mute);
+}
+
+.hover-item .sidebar {
+  text-align: left;
+}
+
+.hover-item:hover .sidebar {
+  transition: opacity 0.4s linear;
+  opacity: 1;
+  transform: translateY(-570px);
+}
+.sidebar {
+  position: absolute;
+  left: 1rem;
+  background-color: var(--blury);
+  width: 100%;
+  height: 550px;
+  opacity: 0;
+}
+
+.bg-blur {
+  background-color: var(--blury);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar-links {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 4rem;
+  font-family: var(--font-2);
+  text-shadow: 0 0 20px var(--blury);
+}
+
+.sidebar-links:hover {
+  color: var(--secondary);
+  font-family: var(--font-1);
+}
+.menu-l {
+  display: none;
+}
