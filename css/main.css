@@ -6,6 +6,14 @@
   font-family: paranoia-b;
   src: url(/fonts/paranoida-g.ttf);
 }
+@font-face  {
+  font-family: spiderfingers;
+  src: url(/fonts/Spiderfingers.ttf)
+}
+@font-face {
+  font-family: spirits;
+  src: url(/fonts/Unquiet\ Spirits.ttf);
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
@@ -26,18 +34,21 @@
   --blury-2: rgba(238, 242, 238, 0.948);
   --font-1: paranoia-b;
   --font-2: "Open Sans", sans-serif;
+  --font-3: paranoia-reg;
+  --font-4: spirits;
 }
 
 html,
 body {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background-color: var(--blury);
+  cursor: url(/assets/logo/rose-xs.png), url(/assets/logo/heart-xs.png), pointer;
 }
 
 .bg-img {
   height: 100vh;
-  background-image: url(/assets/images/images/hearts/heart_hero_transparent.png);
+  background-image: url(/assets/images/hearts/heart_hero_transparent.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -87,6 +98,7 @@ h1 span a:hover {
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
+  padding: 0;
 }
 
 .footer-s .menu-s li a {
@@ -107,7 +119,8 @@ h1 span a:hover {
 .menu-btn:hover {
   border: none;
   color: var(--secondary);
-  text-shadow: 5px 5px 10px var(--secondary-mute);
+  text-shadow: 0 0 10px var(--secondary-mute);
+  font-weight: 700;
 }
 
 .hover-item .sidebar {
@@ -121,6 +134,7 @@ h1 span a:hover {
 }
 .sidebar {
   position: absolute;
+  left: 7px;
   background-color: var(--blury);
   width: 100%;
   height: 550px;
@@ -136,9 +150,10 @@ h1 span a:hover {
   text-decoration: none;
   color: var(--primary);
   font-size: 4rem;
+  font-weight: 300;
   font-family: var(--font-2);
   text-shadow: 0 0 20px var(--blury);
-}
+}S
 
 .sidebar-links:hover {
   color: var(--secondary);
