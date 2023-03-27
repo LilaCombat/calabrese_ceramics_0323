@@ -47,15 +47,11 @@ body {
 }
 
 main {
-border: 2px solid transparent;
+  border: 2px solid transparent;
   width: 90%;
   margin-top: 5rem;
   padding: 0 1rem;
   font-family: var(--font-2);
-}
-main h3 {
-  font-size: 3rem;
-  margin-bottom: 4.2rem;
 }
 
 main p {
@@ -73,10 +69,19 @@ main p:last-child {
 }
 
 .blur {
-    background-color: var(--blury);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
+  background-color: var(--blury);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+.about-link{
+  text-decoration: none;
+  color: var(--primary);
+}
+
+ a:hover{
+  font-family: var(--font-1);
 }

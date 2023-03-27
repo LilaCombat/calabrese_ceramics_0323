@@ -51,6 +51,8 @@ header {
   top: 0;
   position: fixed;
   padding: 1rem 1rem;
+  background-color: var(--blury);
+  backdrop-filter: blur(10px);
 }
 
 h1 {
@@ -67,11 +69,12 @@ h1 span a {
 }
 
 h1 span a:hover {
-  text-shadow: 0 0 50px var(--secondary-mute);
+  color: var(--secondary);
+  text-shadow: 0 0 30px var(--secondary);
 }
 
 .container {
-  margin-top: 45px;
+  margin-top: 55px;
   background-color: var(--blury);
   width: 100%;
   display: grid;
@@ -95,150 +98,152 @@ h1 span a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(200px, auto);
-  row-gap: 0.2rem;
+  /* row-gap: 0.4rem; */
 }
 
 .con2 p {
+  font-family: var(--font-2);
+  text-transform: uppercase;
+  padding: 0.5rem;
   background-color: #fff;
   width: 100%;
   color: var(--primary);
   text-align: center;
 }
 .con2 > .img-1 {
-  background-image: url(/assets/images/archiv/IMG_1219-2.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_01_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 1 / 1 / 2 / 2;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
 }
 
 .con2 > .img-2 {
-  background-image: url(/assets/images/archiv/IMG_1242.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_02_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 1 / 2 / 2 / 3;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
 }
 
 .con2 > .img-3 {
-  background-image: url(/assets/images/archiv/IMG_1249.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_03_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 2 / 1 / 3 / 2;
 }
 .con2 > .img-4 {
-  background-image: url(/assets/images/archiv/IMG_1274.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_04_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 2 / 2 / 4 / 3;
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 .con2 > .img-5 {
-  background-image: url(/assets/images/archiv/IMG_5185.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_05_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 3 / 1 / 4 / 2;
 }
 .con2 > .img-6 {
-  background-image: url(/assets/images/archiv/IMG_5146.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_06_carousel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.con2 > .img-7 {
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_07_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 4 / 1 / 5 / 2;
 }
-
-.con2 > .img-7 {
-  background-image: url(/assets/images/archiv/IMG_5130-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-}
 .con2 > .img-8 {
-  background-image: url(/assets/images/archiv/IMG_5254.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_08_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 5 / 1 / 6 / 2;
+  grid-area: 4 / 2 / 5 / 3;
 }
 .con2 > .img-9 {
-  background-image: url(/assets/images/archiv/IMG_1439.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_09_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 5/ 2 / 6 / 3;
+  grid-area: 5/ 1 / 6 / 2;
 }
 .con2 > .img-10 {
-  background-image: url(/assets/images/archiv/IMG_1445.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_10_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 6 / 1 / 7 / 3;
+  grid-area: 5 / 2 / 6 / 3;
 }
 
 .con2 > .img-11 {
-  background-image: url(/assets/images/archiv/IMG_5191.jpg);
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_11_carousel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 6 / 1 / 7 / 2;
+}
+.con2 > .img-12 {
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_12_carousel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.con2 > .img-13 {
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_13_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 7 / 1 / 8 / 2;
 }
-.con2 > .img-12 {
-  background-image: url(/assets/images/archiv/IMG_5246.jpg);
+.con2 > .img-14 {
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_14_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 7 / 2 / 8 / 3;
 }
 
-.con2 > .img-13 {
-  background-image: url(/assets/images/archiv/IMG_5183.jpg);
+.con2 > .img-15 {
+  background-image: url(/assets/images/carousel_archive/images_archive/archiv_15_carousel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 8 / 1 / 9 / 2;
-}
-.con2 > .img-14 {
-  background-image: url(/assets/images/archiv/IMG_1242.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  grid-area: 8 / 2 / 9 / 3;
-}
-
-.con2 > .img-15 {
-  background-image: url(/assets/images/archiv/IMG_5662.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  grid-area: 9 / 1 / 10 / 2;
 }
 .con2 > .img-16 {
   background-image: url(/assets/images/archiv/IMG_51702.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 9 / 2 / 11 / 3;
+  grid-area: 8 / 2 / 9 / 3;
 }
 .con2 > .img-17 {
   font-family: var(--font-3);
   font-size: 5rem;
-  grid-area: 10 / 1 / 11 / 2;
+  grid-area: 9 / 1 / 10 / 2;
 }
 .con2 > .img-18 {
   background-image: url(/assets/images/archiv/dirty-money-bag/IMG_2263.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  grid-area: 11 / 1 / 12 / 3;
+  grid-area: 9 / 2 / 10 / 3;
 }
 
 .con2 > .img-19 {
@@ -246,14 +251,23 @@ h1 span a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 12 / 1 / 13 / 2;
+  grid-area: 10 / 1 / 11 / 2;
 }
 .con2 > .img-20 {
   background-image: url(/assets/images/archiv/IMG_51702.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  grid-area: 12 / 2 / 13 / 3;
+  grid-area: 10 / 2 / 11 / 3;
+}
+
+.blur {
+  background-color: var(--blury);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
 }
 
 .footer-s {
@@ -281,6 +295,7 @@ h1 span a:hover {
   list-style: none;
   color: var(--secondary);
   border: 1px solid var(--secondary);
+  /* background-color: #fff; */
   border-radius: 6px;
   padding: 0.2rem 1rem;
   text-align: center;
