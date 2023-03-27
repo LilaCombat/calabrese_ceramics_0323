@@ -49,18 +49,18 @@ body {
 main {
   border: 2px solid transparent;
   width: 90%;
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 0 1rem;
   font-family: var(--font-2);
 }
 
 main p {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
 }
 
 main p a {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   color: var(--secondary);
 }
 
